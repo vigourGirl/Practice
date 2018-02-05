@@ -109,7 +109,7 @@ gulp.task('browser-sync', function () {
     server: './',
     ghostMode: false // 点击，滚动和表单在任何设备上输入将被镜像到所有设备里
   });
-  browserSync.watch(dist + '/*.html').on('change', reload);
+  browserSync.watch(dist + '*.html').on('change', reload);
 });
 
 // js
@@ -159,22 +159,6 @@ gulp.task('image', function () {
           ]
       })
   ]))
-    .pipe(gulp.dest(dist))
-    .pipe(reload({
-      stream: true
-    }));
-});
-
-// tiny
-gulp.task('tiny', function () {
-  return gulp.src([dev + '/**/*.{png,jpg,jpeg,gif,ico,svg}',
-      '!' + dev + '/plugins/**/*.*'
-    ])
-    .pipe(changed(dist))
-    .pipe(plumber({
-      errorHandler: errorHandler
-    }))
-    .pipe(tiny())
     .pipe(gulp.dest(dist))
     .pipe(reload({
       stream: true

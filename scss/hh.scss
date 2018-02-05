@@ -1,16 +1,29 @@
-li{
-    width: 100px;
+$color:#aaa;
+li {
+    width: 200px;
     height: 80px;
-    border: 1px solid #000000;
+    border: 1px solid $color;
 }
-.listStyle{
-    list-style: none;
-    font-size: 20px;
+
+.btn-group {
+    .listStyle {
+        list-style: none;
+        font-size: 20px;
+    }
+    .alistStyle {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        color: $color;
+        animation: aaa 3s linear infinite;
+    }
 }
-.alistStyle{
-    text-decoration:none;
-    display:inline-block;
-    padding:10px 20px;
-    text-align:center;
-    color:#000
+@keyframes aaa{
+    0% {
+        width:0;
+    }
+    100%{
+        width:300px;
+    }
 }

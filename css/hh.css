@@ -1,18 +1,40 @@
 li {
-  width: 1rem;
+  width: 2rem;
   height: 0.8rem;
-  border: 0.01rem solid #000000;
+  border: 0.01rem solid #aaa;
 }
 
-.listStyle {
+.btn-group .listStyle {
   list-style: none;
   font-size: 0.2rem;
 }
 
-.alistStyle {
+.btn-group .alistStyle {
   text-decoration: none;
   display: inline-block;
   padding: 0.1rem 0.2rem;
   text-align: center;
-  color: #000;
+  color: #aaa;
+  -webkit-animation: aaa 3s linear infinite;
+          animation: aaa 3s linear infinite;
+}
+
+@-webkit-keyframes aaa {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 3rem;
+  }
+}
+
+@keyframes aaa {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 3rem;
+  }
 }
