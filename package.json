@@ -1,0 +1,51 @@
+{
+  "name": "模板",
+  "version": "1.0.0",
+  "description": "chengju",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "韩原",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "babel-core": "latest",
+    "babel-plugin-transform-remove-strict-mode": "latest",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "latest",
+    "browser-sync": "latest",
+    "cssgrace": "latest",
+    "cssnano": "latest",
+    "cssnext": "latest",
+    "gulp": "latest",
+    "gulp-babel": "latest",
+    "gulp-changed": "latest",
+    "gulp-clean": "latest",
+    "gulp-debug": "latest",
+    "gulp-file-include": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-plumber": "latest",
+    "gulp-postcss": "latest",
+    "gulp-px3rem": "latest",
+    "gulp-rename": "latest",
+    "gulp-replace": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-tinypng-nokey": "latest",
+    "gulp-uglify": "latest",
+    "gulp-useref": "latest",
+    "gulp-util": "latest",
+    "imagemin-gifsicle": "latest",
+    "imagemin-jpegtran": "latest",
+    "imagemin-optipng": "latest",
+    "imagemin-pngquant": "latest",
+    "imagemin-svgo": "latest",
+    "postcss-vmin": "latest"
+  }
+}
