@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        li{
-            width: 100px;
-            height: 80px;
-            border: 1px solid #000000;
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <script type="text/javascript">
+        function get_hfs(designWidth, rem2px) {
+            designWidth = designWidth || 750;
+            rem2px = rem2px || 100;
+            var d = window.document.createElement('div');
+            d.style.width = '1rem';
+            d.style.display = "none";
+            var head = window.document.getElementsByTagName('head')[0];
+            head.appendChild(d);
+            var defaultFontSize = parseFloat(window.getComputedStyle(d, null).getPropertyValue('width'));
+            var st = document.createElement('style');
+            var portrait = "@media screen and (min-width: " + window.innerWidth + "px) {html{font-size:" + ((window.innerWidth /
+                (designWidth / rem2px) / defaultFontSize) * 100) + "%;}}";
+            st.innerHTML = portrait;
+            head.appendChild(st);
+            return defaultFontSize;
         }
-        .listStyle{
-            list-style: none;
-            font-size: 20px;
-        }
-        .alistStyle{
-            text-decoration:none;
-            display:inline-block;
-            padding:10px 20px;
-            text-align:center;
-            color:#000
-        }
-    </style>
+        get_hfs(750);
+    </script>
+    <link rel="stylesheet" href="css/hh.css">
 </head>
 <body>
 <ul class="btn-group">
